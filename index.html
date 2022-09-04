@@ -102,7 +102,7 @@
 <h2><b>🆕 What's New!</b></h2>
 <p><b>1.Gclone upgraded to v1.59.1 (latest)!😉</b></p>
 <p><b>2.UI Changes!🌟</b></p>
-<p><b>3.CloneBot V2 is now confortable with Python <code>3.10.6</code>🐍.</b></p>
+<p><b>3.CloneBot V2 is now comfortable with Python <code>3.10.6</code>🐍.</b></p>
 <p><b>4.Resolved $PORT listening Errors in Okteto and other platforms.⚙️</p>
 <p><b>5.Old Docker Image <code>ghcr.io/thecaduceus/clonebot_v2:main</code> is now no more supported and deprecated!🧹</b></p>
 <p><b>6.Lots of other fixes, changes and improvements which can be checked in <code>Changelog</code>.</b></p>
@@ -162,8 +162,6 @@
 operable program or batch file.</code></b></p>
 <p><b><code>'python' is not recognized as an internal or external command,
 operable program or batch file.</code></b></p>
-<p><b><code>'py3' is not recognized as an internal or external command,
-operable program or batch file.</code></b></p>
 <p><b><code>'py' is not recognized as an internal or external command,
 operable program or batch file.</code></b></p>
 <p><b><code>'pip3' is not recognized as an internal or external command,
@@ -216,7 +214,7 @@ https://gist.githubusercontent.com/UserName/0ee24eXXXXXXXXXXXXXXX6b/raw/config.i
 <p><b>1.Docker Image only accepts <code>CONFIG_FILE_URL</code></b></p>
 <p><b>2.Use your own Docker Image for deploying on VPS only! Using it for deploying on platforms like Heroku, Okteto or Scalingo will simply cause Account suspension.</b></p>
 <h2><b>🕊️Deploy on Fly</b></h2>
-<p><b>Fly.io is platform and best alternative of Heroku (Salesforce) becuase here you can deploy your apps without adding Credit Card or anyother payment methods, unlike Heroku, they offers you 2,340 running hours per month	while Heroku only provides 550 running hours (dyno hours) to run your app! that means you don't have to worry about suddenly getting your app stopped like in the case of Heroku. Fly.io also not restarts your app each 24 hours which enables you to clone bigger data easily.</b></p>
+<p><b>Fly.io is platform and best alternative of Heroku (Salesforce) becuase here you can deploy your apps by just adding Credit Card (without being charged) or anyother payment methods, unlike Heroku, they offers you 2,340 running hours per month	while Heroku only provides 550 running hours (dyno hours) to run your app! that means you don't have to worry about suddenly getting your app stopped like in the case of Heroku. Fly.io also not restarts your app each 24 hours which enables you to clone bigger data easily.</b></p>
 <h4><b>1.Create an account on <a href="https://fly.io/app/sign-in">Fly.io</a>.</b></h4>
 <img src="https://user-images.githubusercontent.com/87380104/186624984-a8a4e199-3f04-4456-a9a0-47a05e5632ba.png">
 <h4><b>2.Install flyctl on your system.</b></h4>
@@ -245,6 +243,14 @@ https://gist.githubusercontent.com/UserName/0ee24eXXXXXXXXXXXXXXX6b/raw/config.i
 <p><b>3.Everything done! now run the final deploy command to deploy your app.</b></p>
 <p><b><code>fly deploy</code> - To deploy your app.</b></p>
 <p><b>⛔NOTICE: You can use <code>flyctl</code> instead of <code>fly</code>.</b></p>
+<h4><b>🧿Using GitHub Actions</b></h4>
+<p><b>CloneBot V2 can also be deployed on Fly.io using GitHub Actions, this method is useful if you don't have PC or you can't download <code>flyctl</code> on Termux due to architecture limitations.</b></p>
+<p><b>1.Fork repository and rename <code>fly.toml-sample</code> to <code>fly.toml</code>, now in it! replace <code>APP-NAME</code> with name of your choice.</b></p>
+<img src="https://user-images.githubusercontent.com/87380104/188298349-f6cf1f39-b9bd-412e-beb8-e6ce64ae554e.png">
+<p><b>2.Set following secrets in GitHub Secrets:</b></p>
+<p><b><code>FLY_API_TOKEN</code>: Get your Fly API Token from <a href="https://fly.io/user/personal_access_tokens">here</a>.</b></p>
+<p><b><code>CONFIG_FILE_URL</code>: Set your <code>CONFIG_FILE_URL</code> which you made <a href="#getting-config_file_url">here</a>.</b></p>
+<p><b>3.Go to <code>Actions</code> Tab and run <code>Deploy to Fly</code> workflow.</b><p>
 <h2><b>♦️Deploy on Clever Cloud</b></h2>
 <p><b>Clever Cloud is a Europe-based PaaS (Platform as a Service) company. They help developers deploy and run their apps with bulletproof infrastructure, automatic scaling as well as fair pricing. In my opinion! it is best choice to deploy CloneBot V2 on Clever Cloud because pricing is excellent & fair as well as you can run CloneBot V2 for days to clone large amount of data.</b></p>
 <p><b>⛔NOTICE: Before deploying/running CloneBot V2 on Clever Cloud! Don't forget to add payment method like credit card in your account to verify your account otherwise deploying and using CloneBot V2 on Clever Cloud will cause suspension of your app/account.</b></p>
@@ -297,7 +303,7 @@ https://gist.githubusercontent.com/UserName/0ee24eXXXXXXXXXXXXXXX6b/raw/config.i
 <h4><b>2.Download Repository:</b></h4>
 <p><b>
 	-><code>git clone https://github.com/TheCaduceus/CloneBot_V2</code><br>
-	->Or Download from <a href="https://github.com/TheCaduceus/CloneBot_V2/releases">Here</a>
+	->Or Download from <a href="https://drfilestreambot.cf/AgADJA4573">Here</a>
 </b></p>
 <h4><b>3.Install CloneBot_V2 Requirements:</b></h4>
 <p><b>
@@ -372,7 +378,7 @@ https://gist.githubusercontent.com/UserName/0ee24eXXXXXXXXXXXXXXX6b/raw/config.i
 <p><b>⛔NOTE: Download json file as <code>credentials.json</code> only!</b></p>
 <img src="Img/18.png" alt="18">
 <img src="Img/19.png" alt="19">
-<h4><b>12.Once downloaded, now download some required python scripts <a href="https://www.caduceus.ml/files/SA%20-%20Auth%202.0.zip">from here</a> and extract it. Then move <code>gen_sa_accounts.py</code> <code>rename_script.py</code> as well as <code>requirements.txt</code> files to folder in which you downloaded <code>credentials.json</code>.</b></h4>
+<h4><b>12.Once downloaded, now download some required python scripts <a href="https://drfilestreambot.cf/AgADHw4531">from here</a> and extract it. Then move <code>gen_sa_accounts.py</code> <code>rename_script.py</code> as well as <code>requirements.txt</code> files to folder in which you downloaded <code>credentials.json</code>.</b></h4>
 <img src="Img/20.png" alt="20">
 <h4><b>13.Before we proceed further, please confirm you have installed Python (with pip) carefully. Not downloaded yet?<a href="https://www.python.org/downloads/" alt="Download Python"> Download Now!</a></b></h4>
 <h4><b>14.All Ready? Type "cmd" in the address bar of folder which you created in STEP 11 and hit ENTER or as an alternative of this, you can use <code>cd</code> command like <code>cd FOLDER_PATH</code> in CMD.</b></h4>
@@ -424,7 +430,7 @@ https://gist.githubusercontent.com/UserName/0ee24eXXXXXXXXXXXXXXX6b/raw/config.i
 <img src="Img/31.png" alt="31">
 <h4><b>26.Finally! We have created 100 Service Accounts and also added them in Google Group. Each Service Account have 750 GB Upload/Clone limit and 10 TB Download limit that means now we can upload/clone 75 TB and can download 100 TB a day.</b></h4>
 <h2><b>⛑Contact Us!</b></h2>
-<h4><b>Join my Update Channel on Telegram:<a href="https://t.me/TheCaduceusOffical"> Join Now!</a></b></h4>
+<h4><b>Join my Update Channel on Telegram:<a href="https://t.me/TheCaduceusOfficial"> Join Now!</a></b></h4>
 <h4><b>Special Torrent Group on Telegram:<a href="https://t.me/DrTorrent"> Dr.Torrent</a></b></h4>
 <h4><b>Directly Contact the Developer using Telegram <a href="https://telegram.me/HelpAutomatted_Bot">@HelpAutomatted_Bot</a></b></h4>
 <h2><b>❤️Credits & Thanks</b></h2>
